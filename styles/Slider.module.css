@@ -1,0 +1,43 @@
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  background-image: url(/school.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.25s ease-in-out;
+  position: relative;
+  background-position: center center;
+}
+
+.imageText {
+  margin-top: 15%;
+  position: absolute;
+  color: var(--secondary);
+  text-align: center;
+  font-family: Cinzel, serif;
+  font-weight: 700;
+}
+
+.imageText h1 {
+  font-weight: inherit;
+  font-size: max(2.4rem, 4.8vw);
+}
+
+.imageText h2 {
+  font-size: max(1.6rem, 3.2vw);
+  font-weight: inherit;
+  color: var(--accent);
+}
+
+.subtitle {
+  color: var(--accent);
+}
+
+@media screen and (max-width: 500px) {
+  .slide {
+    height: 65vh;
+  }
+}

@@ -1,0 +1,32 @@
+.btnBordered,
+.btn {
+  transition: all 0.5s ease-in-out;
+  font-size: clamp(0.5rem, 1.5vw, 1.1rem);
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btnBordered {
+  font-family: var(--font-primary);
+  color: var(--secondary);
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--accent);
+  background-color: #fff0;
+}
+
+.btn {
+  font-family: var(--font-main);
+  padding: min(0.8vw, 0.4rem) min(0.8vw, 0.75rem);
+  background-color: var(--accent);
+  color: black;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: var(--accent);
+}
+
+.btnBordered:hover {
+  background-color: var(--accent);
+  color: #000;
+}
